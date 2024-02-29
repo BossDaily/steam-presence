@@ -1,38 +1,37 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Creating a project
+# Steam Presence
 
-If you're seeing this, you've probably already done this step. Congrats!
+This is a Svelte and Tauri based project that syncs your Steam Rich Presence with your Discord Rich Presence.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Prerequisites for Development
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Make sure you have [Visual Studio C++ Build tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/), [Rust](https://www.rust-lang.org/tools/install), and Node.js installed on your machine.
 
-## Developing
+>[Read This](https://tauri.app/v1/guides/getting-started/prerequisites/) for more information
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Setup
+
+First, clone the repository and navigate into the project directory. Then, install the project dependencies:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm install
 ```
+
+## Development
+
+To start the development server:
+
+```bash
+npm run tauri dev
+```
+
+This command will start the development server and open the application in a new browser tab.
 
 ## Building
 
 To create a production version of your app:
 
 ```bash
-npm run build
+npm run tauri build
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
